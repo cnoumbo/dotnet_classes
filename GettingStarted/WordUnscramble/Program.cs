@@ -5,7 +5,7 @@ internal class Program
     private static readonly FileReader _fileReader = new FileReader();
     private static readonly WordMatcher _wordMatcher = new WordMatcher();
     
-    private const string wordListFileName = "wordList.txt";
+    private const string _wordListFileName = "wordList.txt";
     
     public static void Main(string[] args)
     {
@@ -51,14 +51,21 @@ internal class Program
 
     private static void ExecuteScrambleWordsInFileScenario()
     {
-        var fileName = Console.ReadLine() ?? String.Empty;
-        string[] scrambledWords = _fileReader.Read(fileName);
-        DisplayMatchedUnscrambledWords(scrambledWords);
+        try
+        {
+            var fileName = Console.ReadLine() ?? String.Empty;
+            string[] scrambledWords = _fileReader.Read(fileName);
+            DisplayMatchedUnscrambledWords(scrambledWords);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
     
     private static void DisplayMatchedUnscrambledWords(string[] scrambledWords)
     {
-        string[] wordList = _fileReader.Read(wordListFileName);
+        string[] wordList = _fileReader.Read(_wordListFileName);
 
         List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledWords, wordList);
 
