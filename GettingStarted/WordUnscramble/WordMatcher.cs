@@ -8,16 +8,18 @@ public class WordMatcher
 
         foreach (var scrambledWord in scrambledWords)
         {
+            var currentScrambleWord = scrambledWord.Trim();
             foreach (var word in wordList)
             {
-                if (scrambledWord.Equals(word, StringComparison.OrdinalIgnoreCase))
+                if (currentScrambleWord.Equals(word, StringComparison.OrdinalIgnoreCase))
                 {
-                    matchedWords.Add(BuildMatchedWord(scrambledWord, word));
+                    matchedWords.Add(BuildMatchedWord(currentScrambleWord, word));
                 }
                 else
                 {
-                    var scrambledWordArray = scrambledWord.ToCharArray();
-                    var wordArray = word.ToCharArray();
+                    // convert to lowercase for consistency. 'A' not equals to 'a' into Array.Sort algorithm
+                    var scrambledWordArray = currentScrambleWord.ToLower().ToCharArray();
+                    var wordArray = word.ToLower().ToCharArray();
                     Array.Sort(scrambledWordArray);
                     Array.Sort(wordArray);
 
@@ -25,7 +27,7 @@ public class WordMatcher
                     var sortedWord = new string(wordArray);
                     
                     if(sortedScrambledWord.Equals(sortedWord, StringComparison.OrdinalIgnoreCase))
-                        matchedWords.Add(BuildMatchedWord(scrambledWord, word));
+                        matchedWords.Add(BuildMatchedWord(currentScrambleWord, word));
                 }
             }
         }

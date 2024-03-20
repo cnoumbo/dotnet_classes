@@ -13,6 +13,7 @@
 **/dataSources.local.xml
 # Editors configuration
 **/.idea
+**/.DS_Store
 
 # ignore bin and obj folders
 **/bin

@@ -13,7 +13,7 @@ internal class Program
 
         do
         {
-            Console.Write("Please enter the option - F for file and M for Manual : ");
+            Console.Write("Entrer scrambled word(s) manually or as a file : F - file / M - manual ");
             var option = Console.ReadLine() ?? String.Empty; // Null coalescing
 
             switch (option.ToUpper())
@@ -23,7 +23,7 @@ internal class Program
                     ExecuteScrambleWordsInFileScenario();
                     break;
                 case "M" : 
-                    Console.Write("Enter scrambled words, separate by comma (,) : ");
+                    Console.Write("Enter words manually, separate by commas (,) if multiple: ");
                     ExecuteScrambleWordsManualEntryScenario();
                     break;
                 default:
