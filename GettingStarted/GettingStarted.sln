@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator.Test.Unit"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordUnscramble", "WordUnscramble\WordUnscramble.csproj", "{68B52D6E-2E55-4564-AB26-06E20201B8F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordUnscramble.Test.Unit", "WordUnscramble.Test.Unit\WordUnscramble.Test.Unit.csproj", "{87E86652-AF06-422D-98EE-83998E904E0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{68B52D6E-2E55-4564-AB26-06E20201B8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68B52D6E-2E55-4564-AB26-06E20201B8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68B52D6E-2E55-4564-AB26-06E20201B8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E86652-AF06-422D-98EE-83998E904E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E86652-AF06-422D-98EE-83998E904E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E86652-AF06-422D-98EE-83998E904E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E86652-AF06-422D-98EE-83998E904E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
