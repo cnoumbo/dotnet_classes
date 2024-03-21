@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordUnscramble", "WordUnscr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordUnscramble.Test.Unit", "WordUnscramble.Test.Unit\WordUnscramble.Test.Unit.csproj", "{87E86652-AF06-422D-98EE-83998E904E0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebScraper", "SimpleWebScraper\SimpleWebScraper.csproj", "{12AA427F-41D2-4179-B02B-94A46F71CDC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{87E86652-AF06-422D-98EE-83998E904E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E86652-AF06-422D-98EE-83998E904E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E86652-AF06-422D-98EE-83998E904E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AA427F-41D2-4179-B02B-94A46F71CDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AA427F-41D2-4179-B02B-94A46F71CDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AA427F-41D2-4179-B02B-94A46F71CDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AA427F-41D2-4179-B02B-94A46F71CDC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
